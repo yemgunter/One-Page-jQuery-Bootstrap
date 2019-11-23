@@ -1,4 +1,257 @@
-/*
- * Your Comment Header Here
- */
+/****************************************
+Name: Yolanda Gunter
+Assignment: Coding 07
+Purpose: MVC Contact Form
+Notes: Learning Codeigniter to better understand MVC programming.
+*****************************************/
 
+/*
+***************************************
+Mobile First CSS from 0px to 468px
+***************************************
+*/
+h1 {
+    color: #740074;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    margin: 10px auto;
+    align-content: center;
+}
+
+nav {
+    background: #740074;
+    max-width: 100%;
+    font: bold 18px sans-serif;
+    
+}
+
+nav a {
+    max-width: 100%;
+    text-align: center;
+    color: #b5dacd;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+  
+    
+  
+}
+
+body {
+  background: #e2d1dd;
+  margin: 3em;
+  height: auto;
+}
+
+.bodywrapper {
+    background-color: #fff;
+    max-width: 100%;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1),
+        -5px 0px 5px rgba(0, 0, 0, 1);
+    padding: 10px 20px 10px 20px;
+    white-space: normal;
+    overflow-x: auto; 
+}
+
+.bodywrapper img {
+    float: left;
+    max-width: 50%;
+    display: inline;
+    margin-right: 30px;
+ 
+}
+
+.container {
+    border: 2px;
+    max-width: 100%;
+}
+
+.form-cw {
+  text-align: center;
+  background-color: #F6F7F8;
+  border: 3px solid #D6D9DC;
+  border-radius: 13px;
+  display: center;
+  width: 80%;
+  max-height: 100%;
+  padding: 10px;
+}
+
+.input-group {
+    padding: 0 0 10px 15px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+input {
+    width: 320px;
+    height: 50px;
+    line-height: 20px;
+}
+
+.field-error {
+    color: firebrick;
+}
+
+.frm-submit {
+    min-width: 15%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #740074;
+    position: static;
+    bottom: 0;
+}
+
+.footer-distributed {
+    color: #fff;
+    font: bold 16px sans-serif;
+    text-align: left;
+    
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+    
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+        display: block;
+        max-width: 100%;
+        text-align: center;
+}    
+.footer-distributed h3 {
+        color: #b5dacd;
+    }
+    
+.footer-distributed .footer-icons{ 
+        font-size: 45px;
+}
+    
+.footer-distributed .footer-center a{
+	color:  #e2d1dd;
+	text-decoration: none;
+}
+
+.footer-distributed .footer-center i{
+        margin-left: 20px;
+}
+
+.copyright {
+    background-color: #b5dacd;
+    max-width: 100%;
+    text-align: center;
+    color: #740074;
+    font: bold 14px sans-serif;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/****************************************
+Media Queries
+****************************************/
+
+/*this is for tablet*/
+@media (min-width: 500px) and (max-width: 768px) {
+    bodywrapper h1 {
+        color: red;
+    }
+    
+    bodywrapper h2 {
+        color: #444;
+    }
+    
+}
+
+/*this is for desktop*/
+@media (min-width: 768px) {
+    
+    .header {
+        background-color: #EFF0F1; 
+        margin: 0 auto;
+   
+  }
+    body {
+        background: #fff;
+    }
+    
+    .bodywrapper {
+        background-color: #e2d1dd;
+        
+    }
+    
+    .bodywrapper h1 {
+        color: black;
+    }
+    
+    .bodywrapper h2 {
+        color: #740000;
+    }
+    
+    .p {
+        font: bold 18px sans-serif;
+    }
+    
+    .bodywrapper img {
+        max-width: 70%;
+        margin-right: 30px;
+        margin-left: 40px;
+    }  
+    .container {
+      width: 90%;
+  }
+  
+    .footer-distributed {
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 50px 50px;
+	margin-top: 80px;
+    }
+ 
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
+
+    }
+    .footer-distributed .footer-left{
+            width: 30%;
+            text-align: left;
+    }
+    .footer-distributed .footer-center{
+            width: 30%;
+            text-align: left;
+    }
+    .footer-distributed .footer-right{
+            width: 30%;
+            text-align: left;
+    }
+  
+}
