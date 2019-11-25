@@ -1,6 +1,9 @@
-<!--
-Your Comment Header Here
--->
+<!-- ****************************************************
+Name: Yolanda Gunter
+Assignment: Coding 08
+Purpose: Intro - jQuery and Boostrap
+Notes: Learning jQuery & Boostrap to use for my Final Project
+********************************************************* -->
 <!doctype html>
 <html lang="en">
     <head>
@@ -13,15 +16,197 @@ Your Comment Header Here
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- custom CSS -->
         <link rel="stylesheet" href="css/main.css">
+        <!-- External Custom CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
-        <title>Your Title</title>
+        <title>Y Gunter - Coding 8 jQuery and Boostrap</title>
     </head>
-    <body>
-        <!--
-            Your Body Here
-        -->
+    
+    
+        <body>
+        
+        <!-- My Main Menu -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="images/banner-sm.png" alt="@yemgunter small logo"/>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                        <a href="#about">About</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                   
+                </div>
+                </div>
+            </div>
+        </nav>
+             
+             
+        <!-- My Site Header -->
+        <div id="header"> 
+            <img src="images/banner.png" alt="banner">
+        </div>
+         
+        <!-- My About Intro Text Below Here -->
+        <div class="page-body" id="this-page-top">
+            <div class="intro-section">
+                <h1>Yolanda Gunter - Full Stack Web Developer and Super Creative</h1>
+            </div>
 
 
+            <!-- My About Below Here-->
+            <div class="container">
+                <div id="about">
+                    <h2>About Me</h2>
+                    <h3>My handle across all social networks is <img src="images/banner-sm.png" alt="@yemgunter small logo"/></h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                            <img src="images/yemgunter.png" class="face" alt="Yolanda image"/>
+                            </div>
+                            <div class="col-md-6">
+                            <p class="lead">I'm a super creative. Meaning I create across multiple mediums.</p>
+                            <p class="lead">Creating hand-made jewelry is my favorite thing to do. See some of my latest pieces below in my <a href="#gallery">gallery</a>:</p>
+                            </div>
+                        </div>
+                    [ <a href="#this-page-top">Back To Top</a> ]
+                </div>   
+            </div>
+                
+            <hr class="hr-standard">
+
+            <!-- My Gallery Here -->
+            <div class="container">
+                <div id="gallery">
+                    <h2>Latest Pieces</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 center">
+                            <img src="images/Hadassah-1.png" alt="Image 1 - column 1 - row 1"/>
+                        </div>
+                        <div class="col-lg-4 col-md-4 center">
+                            <img src="images/Hadassah-2.png" alt="Image 2 - column 2 - row 1"/>
+                        </div>
+                        <div class="col-lg-4 col-md-4 center">
+                           <img src="images/Hadassah-3.png" alt="Image 3 - column 3 - row 1"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 center">
+                           <img src="images/Hadassah-4.png" alt="Image 4 - column 1 - row 2"/>
+                        </div>
+                        <div class="col-lg-4 col-md-4 center">
+                            <img src="images/Hadassah-5.png" alt="Image 5 - column 2 - row 2"/>
+                        </div>
+                        <div class="col-lg-4 col-md-4 center">
+                           <img src="images/Hadassah-6.png" alt="Image 6 - column 3 - row 2"/>
+                        </div>             
+                    </div>
+                </div>
+                [ <a href="#this-page-top">Back To Top</a> ]
+            </div>
+
+            <hr class="hr-standard">
+
+            <!-- My Form Below Here -->
+            <div class="form-container">
+                <div id="contact">
+                    <h2>Contact Form</h2>
+                    <div id="msg">
+                        <!-- Blank area for form message to User -->
+                        <br>
+                    </div>
+                    <div class="form-div">
+                        <!-- adding  form attributes -->
+                        <form action="#contact" method="POST">
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="YourEmail@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSubject">Subject</label>
+                            <input type="text" class="form-control" id="inputSubject" placeholder="Subject" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <textarea class="form-control" cols="40" id="inputMessage" rows="10" placeholder="The message you would like to send me." required></textarea>
+                        </div>
+                            <!--Generic buttons for handlers that will work as submit and clear buttons. This is proper professional technique. -->
+                        <div class="form-actions">
+                            <button id="contact-send" type="submit" class="btn btn-success">Send</button>&nbsp;&nbsp;
+                            <button id="contact-clear" type="reset" class="btn btn-primary">Clear</button>
+                        </div>    
+                                 </div>    
+                        </form>
+                    </div>
+                    [ <a href="#this-page-top">Back To Top</a> ]
+                </div>
+            </div>
+
+            <hr class="hr-standard">
+
+            <!-- My "Follow Me" Below Here -->
+            <div class="container">
+            <h3>Keep up with me everywhere online!</h3>
+            </div>
+
+            <hr class="hr-standard">
+
+            <!-- My Footer Below Here -->
+            <div class="footer-section">
+
+                <!-- My Footer Left -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 center">
+                        <h3>Life Events</h3>
+                        <i class="fa fa-calendar"></i>
+                        <p class="event">Class of 2019!</p>    
+                    </div>
+
+                <!-- My Footer Center -->
+                    <div class="col-lg-4 col-md-4 center">
+                        <h3>Let's Connect Online</h3>
+                        <i class="fa fa-laptop"></i>
+                        <div class="footer-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>   
+                    </div>
+
+                <!-- My Footer Right -->
+                    <div class="col-lg-4 col-md-4 center">
+                        <h3>Life Goals</h3> 
+                        <i class="fa fa-fire"></i>
+                        <p class="goals">Keep my daughter, Victoria, encouraged!</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="hr-standard">
+
+            <!-- My Copyright Below Here -->
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 center">
+                         <p>Copyright &copy; 2019 Y. E. M. Gunter</p>
+                    </div>
+                    <div class="col-md-6 text-md-right">
+                        <a href="#about">About</a>
+                        <span>|</span>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- jQuery first then Bootstrap JS -->
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
