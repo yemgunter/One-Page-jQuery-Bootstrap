@@ -1,14 +1,39 @@
 /****************************************
 Name: Yolanda Gunter
-Assignment: Coding 07
-Purpose: MVC Contact Form
-Notes: Learning Codeigniter to better understand MVC programming.
+Assignment: Coding 08
+Purpose: Intro - jQuery and Boostrap
+Notes: Learning jQuery & Boostrap to use for my Final Project
 *****************************************/
 
+.center {
+    text-align: center;
+}
+
+#calcbtn{
+    max-width: 200px;
+}
+
+.center-margin{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.simple-border{
+    border: 1px dashed darkgrey;
+}
+
+
+.col-xs-4 {
+        padding: 15px;
+        font-size: 18px;
+        background: #740074;
+        margin-bottom: 15px;
+    }
+
+
 /*
-***************************************
-Mobile First CSS from 0px to 468px
-***************************************
+My former style code for CI
+
 */
 h1 {
     color: #740074;
@@ -27,7 +52,11 @@ header {
     align-content: center;
 }
 
-nav {
+navbar {
+    background: #740074;
+}
+
+navigation {
     background: #740074;
     max-width: 100%;
     font: bold 18px sans-serif;
@@ -46,33 +75,13 @@ nav a {
     margin-bottom: 10px;
     margin-left: 10px;
     vertical-align: middle;
-  
-    
-  
+   
 }
 
 body {
   background: #e2d1dd;
   margin: 3em;
   height: auto;
-}
-
-.bodywrapper {
-    background-color: #fff;
-    max-width: 100%;
-    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1),
-        -5px 0px 5px rgba(0, 0, 0, 1);
-    padding: 10px 20px 10px 20px;
-    white-space: normal;
-    overflow-x: auto; 
-}
-
-.bodywrapper img {
-    float: left;
-    max-width: 50%;
-    display: inline;
-    margin-right: 30px;
- 
 }
 
 .container {
@@ -173,18 +182,6 @@ footer {
 Media Queries
 ****************************************/
 
-/*this is for tablet*/
-@media (min-width: 500px) and (max-width: 768px) {
-    bodywrapper h1 {
-        color: red;
-    }
-    
-    bodywrapper h2 {
-        color: #444;
-    }
-    
-}
-
 /*this is for desktop*/
 @media (min-width: 768px) {
     
@@ -255,3 +252,4 @@ Media Queries
     }
   
 }
+
