@@ -12,6 +12,9 @@ $(document).ready(function(){
      // Menu element for navigation
     $("navbar").css("background-color", "#740074");
     
+    // Syle for Back To Top
+    $("#this-page-top").css("h5");
+    
     // Header element with id header
     $("#header").css("text-align", "center");
     
@@ -21,11 +24,12 @@ $(document).ready(function(){
     $("h3").css("text-align", "left");
     $("h4").css("text-align", "left");
     $("h5").css("text-align", "left");
-    $("h6").css("text-align", "left"):
+    $("h6").css("text-align", "left");
     
      // Highlight form field elements
     $('input[type="text"]').css("background", "yellow");
     $('input[type="email"]').css("background", "yellow");
+    $('input[type="textarea"]').css("background", "yellow");
     
     
 });
