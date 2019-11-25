@@ -29,10 +29,46 @@ $(document).ready(function(){
     $('.photo').css("width", "200px");
     
      // Highlight form related styling and elements
-    $('#form-div').css("text-align", "center");
+    $('#form-div').css("text-align", "left");
     $('input[type="text"]').css("background", "yellow");
     $('input[type="email"]').css("background", "yellow");
     $('input[type="message"]').css("background", "yellow");
+    $("msg").innerHTML("<br>");
     
     $('.footer-section').css("background-color", "#e2d1dd");
+    $('.footer-section').css("horizontal-align", "center");
 });
+
+// Form validation script
+ $(document).ready(function(){
+
+             $('#contact-form').validate(
+             {
+              rules: {
+                name: {
+                  minlength: 2,
+                  required: true
+                },
+                email: {
+                  required: true,
+                  email: true
+                },
+                subject: {
+                  minlength: 10,  
+                  required: true
+                },
+                message: {
+                  minlength: 20,
+                  required: true
+                }
+              },
+              highlight: function(element) {
+                $(element).closest('.control-group').removeClass('success').addClass('error');
+              },
+              success: function(element) {
+                element
+                .text('OK!').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
+              }
+             });
+            }); 
