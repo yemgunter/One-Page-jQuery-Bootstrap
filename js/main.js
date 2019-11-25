@@ -5,23 +5,27 @@ Purpose: Intro - jQuery and Boostrap
 Notes: Learning jQuery & Boostrap to use for my Final Project
  **************************************************************/
 
-"use strict"
+"use strict";
         
 $(document).ready(function(){
-     // Replace text button
-    $("button").click(function(){
-        $("p").text("Hello World!");         
-    });
-    // Highlight element with id mark
-    $("#mark").css("background", "yellow");
-
-    // Highlight elements with class mark
-    $(".mark").css("background", "yellow");
-
-    // Highlight paragraph elements
-    $("p").css("background", "orange");
+    
+     // Menu element for navigation
+    $("navbar").css("background-color", "#740074");
+    
+    // Header element with id header
+    $("#header").css("text-align", "center");
+    
+    // Heading paragraph elements
+    $("h1").css("text-align", "center");
+    $("h2").css("text-align", "left");
+    $("h3").css("text-align", "left");
+    $("h4").css("text-align", "left");
+    $("h5").css("text-align", "left");
+    $("h6").css("text-align", "left"):
     
      // Highlight form field elements
     $('input[type="text"]').css("background", "yellow");
-    $('input[type="password"]').css("background", "green");
+    $('input[type="email"]').css("background", "yellow");
+    
+    
 });
