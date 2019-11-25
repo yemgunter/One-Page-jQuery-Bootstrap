@@ -61,28 +61,26 @@ Notes: Learning jQuery & Boostrap to use for my Final Project
 
 
             <!-- My About Below Here-->
-            <div id="about">
-                <div id="blurb">
-                    <h2>About Me</h2>
-                    <h3>My handle across all social networks is <img src="images/banner-sm.png" alt="@yemgunter small logo"/></h3>
+            <div class="container">
+                <div id="about">
+                    <div id="blurb">
+                        <h2>About Me</h2>
+                        <h4>My handle across all social networks is <img src="images/banner-sm.png" alt="@yemgunter small logo"/></h4>
 
-                    <p><img src="images/yemgunter.png" alt="Yolanda image"/></p>
-                    <p>I'm a super creative. Meaning I create across multiple mediums.</p>
-                    <ul>
-                    <li>Painting
-                    <li>Sewing
-                    <li>Jewelry Making
-                    </ul>
-                    <p>My favorite thing is hand-making jewelry. See some of my latest pieces below:</p>
-                </div>
-                [ <a href="#this-page-top">Back To Top</a> ]
-            </div>   
-            
+                        <p><img src="images/yemgunter.png" alt="Yolanda image"/></p>
+                        <p>I'm a super creative. Meaning I create across multiple mediums.</p>
+                        <p>Creating hand-made jewelry is my favorite thing to do. See some of my latest pieces below in my <a href="#gallery">gallery</a>:</p>
+                    </div>
+                    [ <a href="#this-page-top">Back To Top</a> ]
+                </div>   
+            </div>
+                
             <hr class="hr-standard">
 
             <!-- My Gallery Here -->
             <div class="container">
                 <div id="gallery">
+                    <h2>Latest Pieces</h2>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 center">
                             <img src="images/banner-sm.png" alt="Image 1 - column 1 - row 1"/>
@@ -113,41 +111,44 @@ Notes: Learning jQuery & Boostrap to use for my Final Project
 
             <!-- My Form Below Here -->
             <div class="form-container">
-                <div id="msg">
-                    <!-- Blank area for form message to User -->
-                    <br>
+                <div id="contact">
+                    <h2>Contact Me</h2>
+                    <div id="msg">
+                        <!-- Blank area for form message to User -->
+                        <br>
+                    </div>
+                    <div id="form-div">
+                        <!-- adding  form attributes -->
+                        <form id="contact-form" name="contact-form" action="email.php" method="post">
+                            <div class="input-div">
+                                <input type="text" class="form-input"
+                                       id="name" name="name" placeholder="Your Name" maxlength="64" value="required">
+                            </div>
+                            <div class="input-div">
+                                <input type="email" class="form-input"
+                                       id="email" name="email" placeholder="Return Email" value="required">
+                            </div>    
+                            <div class="input-div">
+                                <input type="email" class="form-input"
+                                       id="email2" name="email2" placeholder="Re-Enter Email" value="required">
+                            </div>    
+                            <div class="input-div">
+                                <input type="text" class="form-input"
+                                       id="subject" name="subject" placeholder="Subject" maxlength="64" value="required">
+                            </div>      
+                            <div class="input-div">
+                                <textarea id="message" name="message" class="form-input"
+                                        placeholder="Message" maxlength="1000" rows="10" value="required"></textarea>
+                            </div> 
+                            <div class="input-div">
+                            <!--Generic buttons for handlers that will work as submit and clear buttons. This is proper professional technique. -->
+                                <button id="contact-send" type="button" class="">Send</button>&nbsp;&nbsp;
+                                <button id="contact-clear" type="button" class="">Clear</button>
+                            </div>    
+                        </form>
+                    </div>
+                    [ <a href="#this-page-top">Back To Top</a> ]
                 </div>
-                <div id="form-div">
-                    <!-- adding  form attributes -->
-                    <form id="contact-form" name="contact-form" action="email.php" method="post">
-                        <div class="input-div">
-                            <input type="text" class="form-input"
-                                   id="name" name="name" placeholder="Your Name" maxlength="64" value="">
-                        </div>
-                        <div class="input-div">
-                            <input type="email" class="form-input"
-                                   id="email" name="email" placeholder="Return Email" value="">
-                        </div>    
-                        <div class="input-div">
-                            <input type="email" class="form-input"
-                                   id="email2" name="email2" placeholder="Re-Enter Email" value="">
-                        </div>    
-                        <div class="input-div">
-                            <input type="text" class="form-input"
-                                   id="subject" name="subject" placeholder="Subject" maxlength="64" value="">
-                        </div>      
-                        <div class="input-div">
-                            <textarea id="message" name="message" class="form-input"
-                                    placeholder="Message" maxlength="1000" rows="10"></textarea>
-                        </div> 
-                        <div class="input-div">
-                        <!--Generic buttons for handlers that will work as submit and clear buttons. This is proper professional technique. -->
-                            <button id="contact-send" type="button" class="">Send</button>&nbsp;&nbsp;
-                            <button id="contact-clear" type="button" class="">Clear</button>
-                        </div>    
-                    </form>
-                </div>
-                [ <a href="#this-page-top">Back To Top</a> ]
             </div>
 
             <hr class="hr-standard">
