@@ -9,9 +9,6 @@ Notes: Learning jQuery & Boostrap to use for my Final Project
     text-align: center;
 }
 
-#calcbtn{
-    max-width: 200px;
-}
 
 .center-margin{
     margin-left: auto;
@@ -23,18 +20,14 @@ Notes: Learning jQuery & Boostrap to use for my Final Project
 }
 
 
-.col-xs-4 {
+.col-md-6 {
+        max-width: 100%;
         padding: 15px;
         font-size: 18px;
-        background: #740074;
         margin-bottom: 15px;
     }
+    
 
-
-/*
-My former style code for CI
-
-*/
 h1 {
     color: #740074;
 }
@@ -45,22 +38,16 @@ h2 {
 
 img {
     max-width: 100%;
+    vertical-align: middle;
+}
+
+.face {
+    width: 25%;
 }
 
 header {
     margin: 10px auto;
     align-content: center;
-}
-
-navbar {
-    background: #740074;
-}
-
-navigation {
-    background: #740074;
-    max-width: 100%;
-    font: bold 18px sans-serif;
-    
 }
 
 nav a {
@@ -75,6 +62,7 @@ nav a {
     margin-bottom: 10px;
     margin-left: 10px;
     vertical-align: middle;
+    
    
 }
 
@@ -252,4 +240,5 @@ Media Queries
     }
   
 }
+
 
