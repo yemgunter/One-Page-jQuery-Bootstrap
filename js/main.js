@@ -25,15 +25,15 @@ $(document).ready(function(){
     $('h6').css("text-align", "left");
     
     // About Image styling
-    $('.photo').css("verticle-align", "middle");
-    $('.photo').css("width", "200px");
+    $('#about').css("verticle-align", "middle");
+    $('#about').css("width", "200px");
+    $('#about').css("text-align", "center");
     
      // Highlight form related styling and elements
-    $('#form-div').css("text-align", "left");
+    $('#form-div').css("text-align", "center");
     $('input[type="text"]').css("background", "yellow");
     $('input[type="email"]').css("background", "yellow");
     $('input[type="message"]').css("background", "yellow");
-    $("msg").innerHTML("<br>");
     
     $('.footer-section').css("background-color", "#e2d1dd");
     $('.footer-section').css("horizontal-align", "center");
