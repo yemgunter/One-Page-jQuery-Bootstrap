@@ -38,8 +38,7 @@ h2 {
 
 img .png {
     max-width: 100%;
-    vertical-align: middle;
-    padding: 10px 10px 10px 10px;
+    vertical-align: middle:
 }
 
 .face {
@@ -47,9 +46,9 @@ img .png {
     vertical-align: middle;
 }
 
-header {
-    margin: 10px auto;
-    align-content: center;
+#header img {
+   width: 100%;
+   height: auto;
 }
 
 nav a {
@@ -77,6 +76,11 @@ body {
 .container {
     border: 2px;
     max-width: 100%;
+}
+
+#gallery img {
+   width: 100%;
+   height: auto;
 }
 
 .form-div {
