@@ -7,6 +7,9 @@ Notes: Learning jQuery & Boostrap to use for my Final Project
 
 .center {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 
@@ -25,6 +28,7 @@ Notes: Learning jQuery & Boostrap to use for my Final Project
         padding: 15px;
         font-size: 18px;
         margin-bottom: 15px;
+        
     }
     
 
@@ -41,12 +45,12 @@ img .png {
     vertical-align: middle:
 }
 
-.face {
+#about .face {
     width: 50%;
     vertical-align: middle;
 }
 
-#header img {
+#navbar-brand img {
    width: 100%;
    height: auto;
 }
@@ -67,6 +71,11 @@ nav a {
    
 }
 
+#header img {
+   width: 100%;
+   height: auto;
+}
+
 body {
   background: #e2d1dd;
   margin: 3em;
@@ -83,12 +92,16 @@ body {
    height: auto;
 }
 
+.form-container {
+   display: center;
+}
+
 .form-div {
   text-align: left;
   background-color: #F6F7F8;
   border: 3px solid #D6D9DC;
   border-radius: 13px;
-  display: center;
+  
   width: 80%;
   max-height: 100%;
   padding: 10px;
@@ -146,14 +159,13 @@ Media Queries
     .header {
         background-color: #EFF0F1; 
         margin: 0 auto;
-   
   }
+  
     body {
         background: #fff;
     }
-    
-    
-    .p {
+     
+    p {
         font: bold 18px sans-serif;
     }
 }
